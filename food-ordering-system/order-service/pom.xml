@@ -12,12 +12,17 @@
     <artifactId>order-service</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>oder-domain</module>
+        <module>order-domain</module>
         <module>order-application</module>
-        <module>oder-dataaccess</module>
+        <module>order-dataaccess</module>
         <module>order-messaging</module>
     </modules>
-
-    <properties>
-    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 </project>

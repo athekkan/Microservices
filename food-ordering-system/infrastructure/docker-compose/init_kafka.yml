@@ -7,7 +7,7 @@ services:
       "
       # block until kafka is reachable
       echo -e 'Starting ****'
-      kafka-topics --bootstrap-server kafka-broker-1:19092 --list
+      kafka-topics --bootstrap-server kafka-broker-1:9092 --list
 
       echo -e 'Deleting kafka topics'
       kafka-topics --bootstrap-server kafka-broker-1:9092 --topic payment-request --delete --if-exists
